@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bancoalbeca</string>
+    <string name="iniciar_sesion">Iniciar sesion</string>
+    <string name="introduce_el_usuario">Introduce el usuario</string>
+    <string name="introduce_password">Introduce la contraseña</string>
+    <string name="entrar">Entrar</string>
+    <string name="salir">Salir</string>
+</resources>

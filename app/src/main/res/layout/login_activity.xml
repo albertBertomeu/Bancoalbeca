@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        >
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/iniciar_sesion"
+            android:gravity="center"
+            android:textAppearance="?attr/textAppearanceHeadline4"
+            android:layout_marginTop="100dp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:helperText="obligatorio"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/introduce_el_usuario"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:endIconMode="password_toggle"
+            app:helperText="obligatorio"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/introduce_password"
+                android:inputType="textPassword"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/començament"
+                    android:layout_marginTop="100dp">
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnEntrar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entrar"
+                        app:layout_constraintStart_toStartOf="@id/començament"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/btnSalir"
+                        android:layout_marginEnd="20dp"
+                         />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSalir"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/salir"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/començament"
+                        app:layout_constraintStart_toEndOf="@id/btnEntrar"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
