@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".App">
+    tools:context=".LoginActivity">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             android:src="@drawable/ic_banc"
             android:layout_gravity="center"
             app:layout_anchor="@id/bottomAppBar"
-            />
+            tools:ignore="ContentDescription" />
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
