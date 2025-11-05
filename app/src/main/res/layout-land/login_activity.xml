@@ -13,20 +13,22 @@
         android:layout_marginStart="60dp"
         android:layout_marginEnd="60dp"
         >
+
+
         <TextView
             android:id="@+id/tvTitulo"
+            style="@style/capçalera"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/iniciar_sesion"
             android:gravity="center"
-            style="@style/capçalera"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="70dp"
             />
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="10dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
             app:helperText="@string/obligatorio"
 
@@ -43,7 +45,7 @@
             android:id="@+id/tilPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="10dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
             app:endIconMode="password_toggle"
             app:helperText="@string/obligatorio"
@@ -63,7 +65,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/començament"
-                    android:layout_marginTop="100dp">
+                    android:layout_marginTop="10dp">
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/btnEntrar"
                         android:layout_width="0dp"

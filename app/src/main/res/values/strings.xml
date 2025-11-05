@@ -1,9 +1,20 @@
 <resources>
     <string name="app_name">Bancoalbeca</string>
-    <string name="iniciar_sesion">Iniciar sesion</string>
-    <string name="introduce_el_usuario">Introduce el usuario</string>
-    <string name="introduce_password">Introduce la contraseña</string>
-    <string name="entrar">Entrar</string>
-    <string name="salir">Salir</string>
-    <string name="bienvenido">Bienvenido %1$s</string>
+    <string name="iniciar_sesion">Start session</string>
+    <string name="introduce_el_usuario">User</string>
+    <string name="introduce_password">Password</string>
+    <string name="entrar">LOG IN</string>
+    <string name="salir">EXIT</string>
+    <string name="bienvenido">Welcome %1$s</string>
+    <string name="bienvenida">Welcome to the Banco Valencia</string>
+    <string name="cajeros">ATM</string>
+    <string name="promociones">PROMOTIONS</string>
+    <string name="cambiar_contrase_a">CHANGE PASSWORD</string>
+    <string name="transferencias">TRANSFERS</string>
+    <string name="movimientos">MOVEMENTS</string>
+    <string name="posici_n_global">GLOBAL POSITION</string>
+    <string name="obligatorio">Required</string>
+    <string name="old_password">Old Password</string>
+    <string name="actual_password">New Password</string>
+    <string name="aceptar">ACCEPT</string>
 </resources>
