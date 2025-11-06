@@ -31,16 +31,19 @@ class LoginActivity : AppCompatActivity() {
             cliente.setNif(binding.tiUsuario.text.toString())
                 cliente.setClaveSeguridad(binding.tiPassword.text.toString())
 
-            // Logueamos al cliente
-            val clienteLogeado = mbo?.login(cliente) ?: -1
-            if(clienteLogeado == -1) {
-                Toast.makeText(this,"El cliente no existe en la BD", Toast.LENGTH_LONG).show()
-            }else{
-                val intent = Intent(this, MainActivity::class.java)
-                intent.putExtra("Cliente",clienteLogeado)
-                startActivity(intent)
+            if(entrar()) {
+                // Logueamos al cliente
+                val clienteLogeado = mbo?.login(cliente) ?: -1
+
+                if (clienteLogeado == -1) {
+                    Toast.makeText(this, "El cliente no existe en la BD", Toast.LENGTH_LONG).show()
+                } else {
+                    val intent = Intent(this, MainActivity::class.java)
+                    intent.putExtra("Cliente", clienteLogeado)
+                    startActivity(intent)
 
 
+                }
             }
 
 

@@ -28,6 +28,8 @@ class MainActivity: AppCompatActivity() {
         binding.transferencia.setOnClickListener {
             val intent = Intent(this, TransferActivity::class.java)
             intent.putExtra("Cliente",client)
+            startActivity(intent)
+            finish()
         }
     }
 }
