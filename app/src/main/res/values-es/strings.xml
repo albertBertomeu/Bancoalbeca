@@ -17,4 +17,16 @@
     <string name="old_password">Contraseña antigua</string>
     <string name="actual_password">Nueva contraseña</string>
     <string name="aceptar">ACEPTAR</string>
+    <string name="cuenta_propia">Cuenta propia</string>
+    <string name="elige_tu_cuenta">Elige tu cuenta</string>
+    <string name="cuenta_ajen">Cuenta ajena</string>
+    <string name="escribe_numero_cuenta_ajena">Escribe numero cuenta ajena</string>
+    <string name="cantidad">Cantidad:</string>
+    <string name="enviar_justificante">Enviar justificante</string>
+    <string name="enviar">ENVIAR</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="selecciona_la_cuenta">Selecciona la cuenta: </string>
+    <string name="ltimos_movimientos">Últimos movimientos</string>
+    <string name="cuentas">Cuentas:</string>
+
 </resources>

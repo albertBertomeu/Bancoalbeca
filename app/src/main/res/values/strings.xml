@@ -17,4 +17,15 @@
     <string name="old_password">Old Password</string>
     <string name="actual_password">New Password</string>
     <string name="aceptar">ACCEPT</string>
+    <string name="cuenta_propia">own account</string>
+    <string name="elige_tu_cuenta">Choose your account</string>
+    <string name="cuenta_ajen">Foreign account</string>
+    <string name="escribe_numero_cuenta_ajena">Write number of foreign account</string>
+    <string name="cantidad">Amount:</string>
+    <string name="enviar_justificante">send bank statement</string>
+    <string name="enviar">SEND</string>
+    <string name="cancelar">CANCEL</string>
+    <string name="selecciona_la_cuenta">Choose your account: </string>
+    <string name="ltimos_movimientos">Últimos movimientos</string>
+    <string name="cuentas">Accounts:</string>
 </resources>

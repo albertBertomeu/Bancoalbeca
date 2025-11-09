@@ -6,11 +6,16 @@
     </style>
 
     <style name="Theme.Bancoalbeca" parent="Base.Theme.Bancoalbeca">
-        <item name="android:windowBackground">@drawable/bienvenida</item>
-
+    <item name="android:windowBackground">@drawable/fondo</item>
     </style>
     <style name="capçalera" parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">20pt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">monospace</item>
+
+    </style>
+    <style name="titols" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">16pt</item>
         <item name="android:textStyle">bold</item>
         <item name="android:typeface">monospace</item>
 

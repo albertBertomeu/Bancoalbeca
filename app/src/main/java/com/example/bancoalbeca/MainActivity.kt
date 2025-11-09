@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.bancoalbeca.databinding.MainActivityBinding
 import com.example.bancoalbeca.pojo.Cliente
+import com.example.bancoalbeca.posicion.PosicionGlobalActivity
 
 class MainActivity: AppCompatActivity() {
     private lateinit var binding: MainActivityBinding
@@ -27,6 +28,17 @@ class MainActivity: AppCompatActivity() {
         }
         binding.transferencia.setOnClickListener {
             val intent = Intent(this, TransferActivity::class.java)
+            intent.putExtra("Cliente",client)
+            startActivity(intent)
+        }
+        binding.posicion.setOnClickListener {
+            val intent=Intent(this, PosicionGlobalActivity::class.java)
+            intent.putExtra("Cliente",client)
+            startActivity(intent)
+            finish()
+        }
+        binding.movimientos.setOnClickListener {
+            val intent=Intent(this, MovimientosActivity::class.java)
             intent.putExtra("Cliente",client)
             startActivity(intent)
             finish()
