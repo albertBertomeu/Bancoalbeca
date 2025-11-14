@@ -26,16 +26,12 @@ class MovimientosAdapter(private val movimientos: ArrayList<Movimiento>) : Recyc
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val posicion=movimientos.get(position)
         with(holder){
-            binding.principalmovimientos.text=posicion.getDescripcion()
+            binding.principalmovimientos.text=posicion.getCuentaDestino().toString()
             binding.secundarimovimientos.text="${posicion.getFechaOperacion()} importe ${posicion.getImporte()}"
 
         }
     }
-    fun updateData(nuevosMovimientos: List<Movimiento>) {
-        this.movimientos.clear()
-        this.movimientos.addAll(nuevosMovimientos)
-        notifyDataSetChanged()
-    }
+
 
     override fun getItemCount(): Int {
        return movimientos.size
