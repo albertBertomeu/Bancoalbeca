@@ -35,16 +35,10 @@ class MovimientosActivity : AppCompatActivity() {
         val adapt = ArrayAdapter(this,android.R.layout.simple_spinner_item, cuentas  )
         adapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) // Asignar el ArrayAdapter al Spinner
         spinner.adapter = adapt
-
         linearLayout= LinearLayoutManager(this)
-        movimientosadapter = MovimientosAdapter(arrayListOf())
         itemDecoration= DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
 
-        binding.recycler.apply {
-            layoutManager = linearLayout
-            adapter = movimientosadapter
-            addItemDecoration(itemDecoration)
-        }
+
 
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener
              {
@@ -53,7 +47,13 @@ class MovimientosActivity : AppCompatActivity() {
                 val cuenta = parent.getItemAtPosition(position) as? Cuenta
                 val movimientos = ArrayList(mbo?.getMovimientos(cuenta) ?: emptyList())
                 movimientos as ArrayList<Movimiento>
-                movimientosadapter.updateData(movimientos)
+                movimientosadapter = MovimientosAdapter(movimientos)
+
+                binding.recycler.apply {
+                    layoutManager = linearLayout
+                    adapter = movimientosadapter
+                    addItemDecoration(itemDecoration)
+                }
 
 
             }
