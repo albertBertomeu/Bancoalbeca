@@ -18,8 +18,7 @@ class MovimientosAdapter(private val movimientos: ArrayList<Movimiento>) : Recyc
 
 
     override fun onCreateViewHolder(parent: ViewGroup,viewType: Int ): ViewHolder {
-        context=parent.context
-        val view= LayoutInflater.from(context).inflate(R.layout.item_movimientos,parent,false)
+        val view= LayoutInflater.from(parent.context).inflate(R.layout.item_movimientos,parent,false)
        return ViewHolder(view)
     }
 
@@ -27,7 +26,7 @@ class MovimientosAdapter(private val movimientos: ArrayList<Movimiento>) : Recyc
         val posicion=movimientos.get(position)
         with(holder){
             binding.principalmovimientos.text=posicion.getCuentaDestino().toString()
-            binding.secundarimovimientos.text="${posicion.getFechaOperacion()} importe ${posicion.getImporte()}"
+            binding.secundarimovimientos.text="${posicion.getDescripcion()}\n importe ${posicion.getImporte()}"
 
         }
     }
