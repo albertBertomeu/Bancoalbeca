@@ -19,7 +19,7 @@ class MovimientosActivity : AppCompatActivity() {
     private lateinit var itemDecoration: DividerItemDecoration
 
     private lateinit var linearLayout: LinearLayoutManager
-    private lateinit var movimientosadapter: MovimientosAdapter
+    private lateinit var movimientosAdapter: MovimientosAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -47,11 +47,11 @@ class MovimientosActivity : AppCompatActivity() {
                 val cuenta = parent.getItemAtPosition(position) as? Cuenta
                 val movimientos = ArrayList(mbo?.getMovimientos(cuenta) ?: emptyList())
                 movimientos as ArrayList<Movimiento>
-                movimientosadapter = MovimientosAdapter(movimientos)
+                movimientosAdapter = MovimientosAdapter(movimientos)
 
                 binding.recycler.apply {
                     layoutManager = linearLayout
-                    adapter = movimientosadapter
+                    adapter = movimientosAdapter
                     addItemDecoration(itemDecoration)
                 }
 

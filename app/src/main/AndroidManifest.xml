@@ -12,21 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bancoalbeca">
         <activity
+            android:name=".posicion.PosicionGlobalDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"/>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ChangePasswordActivity" />
         <activity android:name=".TransferActivity" />
         <activity android:name=".MovimientosActivity" />
         <activity android:name=".posicion.PosicionGlobalActivity" />
-
-
     </application>
 
 </manifest>

@@ -28,4 +28,7 @@
     <string name="selecciona_la_cuenta">Choose your account: </string>
     <string name="ltimos_movimientos">Últimos movimientos</string>
     <string name="cuentas">Accounts:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="detalle_del_movimiento">Detalle del movimiento</string>
 </resources>
