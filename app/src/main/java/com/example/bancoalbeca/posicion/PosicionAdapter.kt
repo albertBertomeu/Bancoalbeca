@@ -31,8 +31,8 @@ class PosicionAdapter(private val cliente: ArrayList<Cuenta>):RecyclerView.Adapt
             val saldo = posicion.getSaldoActual() ?: 0.0f
             if (saldo < 0.0f) {
                 binding.secundari.setTextColor(Color.RED)
-            } else {
-                binding.secundari.setTextColor(Color.BLACK)
+            } else if(saldo>0.0f){
+                binding.secundari.setTextColor(Color.GREEN)
             }
             binding.principal.text = posicion.getNumeroCuenta()
 

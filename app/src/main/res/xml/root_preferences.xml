@@ -1,0 +1,47 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:title="Idioma"
+        app:icon="@drawable/ic_global"
+        >
+        <ListPreference
+            app:dialogTitle="Indica en que idioma quieres la app"
+            app:entries="@array/idioma"
+            app:entryValues="@array/codigoidioma"
+            app:key="Idioma"
+            app:title="Idioma app"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+<PreferenceCategory
+    app:title="Datos"
+    app:icon="@drawable/ic_cloud"
+    >
+    <ListPreference
+        app:defaultValue="BDL"
+        app:dialogTitle="Indica el origen de la base de datos"
+        app:entries="@array/origenDatos"
+        app:entryValues="@array/codigo_origen"
+        app:key="origen"
+        app:title="Origen de los datos"
+        app:useSimpleSummaryProvider="true" />
+</PreferenceCategory>
+
+    <PreferenceCategory app:title="Multimedia">
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_music"
+            app:key="reproducirmusica"
+            app:summaryOff="No escuchar nada"
+            app:summaryOn="Escuchar música mientras se ejecuta la app"
+            app:title="Música" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_video"
+            app:key="reproducirvideo"
+            app:summaryOff="No ver el video"
+            app:summaryOn="Ver video al principio de la app"
+            app:title="Reproducir video bienvenida" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

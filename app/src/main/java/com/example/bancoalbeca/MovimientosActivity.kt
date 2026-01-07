@@ -37,7 +37,9 @@ class MovimientosActivity : AppCompatActivity() {
         spinner.adapter = adapt
         linearLayout= LinearLayoutManager(this)
         itemDecoration= DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
-
+binding.btnSalir.setOnClickListener {
+    finish()
+}
 
 
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener

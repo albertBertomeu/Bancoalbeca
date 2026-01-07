@@ -37,7 +37,7 @@ class AccountsAdapter(private val cliente: ArrayList<Cuenta>,private val listene
             if (saldo < 0.0f) {
                 binding.secundari.setTextColor(Color.RED)
             } else {
-                binding.secundari.setTextColor(Color.BLACK)
+                binding.secundari.setTextColor(Color.GREEN)
             }
             binding.principal.text = posicion.getNumeroCuenta()
 

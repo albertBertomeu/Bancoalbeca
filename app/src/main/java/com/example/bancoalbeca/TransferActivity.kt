@@ -43,6 +43,16 @@ class TransferActivity : AppCompatActivity() {
         val spinner = binding.spinnerOpciones
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) // Asignar el ArrayAdapter al Spinner
         spinner.adapter = adapter
+
+        val spinner2 = binding.spinnerOpciones2
+        spinner2.adapter = adapter
+
+        val monedas = arrayOf("€", "$")
+        val adapter2 = ArrayAdapter(this, android.R.layout.simple_spinner_item, monedas)
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        val spinner3 = binding.moneda
+        spinner3.adapter = adapter2
+        
         binding.rbAjena.setOnClickListener {
             if (binding.rbAjena.isChecked) {
                 binding.txtCuenta.visibility = View.VISIBLE
@@ -95,13 +105,6 @@ class TransferActivity : AppCompatActivity() {
 
         }
 
-        val spinner2 = binding.spinnerOpciones2
-        spinner2.adapter = adapter
 
-        val monedas = arrayOf("$", "€")
-        val adapter2 = ArrayAdapter(this, android.R.layout.simple_spinner_item, monedas)
-        val spinner3 = binding.moneda
-        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spinner3.adapter = adapter2
     }
 }

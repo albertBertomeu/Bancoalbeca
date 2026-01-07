@@ -28,5 +28,15 @@
     <string name="selecciona_la_cuenta">Selecciona la cuenta: </string>
     <string name="ltimos_movimientos">Últimos movimientos</string>
     <string name="cuentas">Cuentas:</string>
+    <string name="detalle_del_movimiento">Detalle del movimiento</string>
+    <string name="home">CASA</string>
+    <string name="settings">SETTINGS</string>
+    <string name="logout">LOGOUT</string>
+    <string name="navigation_drawer_open">abierto</string>
+    <string name="navigation_drawer_close">cerrado</string>
+    <string name="todos">Todos</string>
+    <string name="tipo_0">Tipo 0</string>
+    <string name="tipo_1">Tipo 1</string>
+    <string name="tipo_2">Tipo 2</string>
 
 </resources>

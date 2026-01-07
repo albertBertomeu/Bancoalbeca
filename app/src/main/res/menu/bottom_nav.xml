@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/todos"
+    android:icon="@drawable/a1"
+    android:title="@string/todos"/>
+    <item android:id="@+id/tipo0"
+        android:icon="@drawable/a2"
+        android:title="@string/tipo_0"/>
+    <item android:id="@+id/tipo1"
+        android:icon="@drawable/a3"
+        android:title="@string/tipo_1"/>
+    <item android:id="@+id/tipo2"
+        android:icon="@drawable/a4"
+        android:title="@string/tipo_2"/>
+    <item android:id="@+id/salir"
+        android:icon="@drawable/ic_exit"
+        android:title="@string/salir"/>
+</menu>

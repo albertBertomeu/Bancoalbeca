@@ -51,10 +51,6 @@ class LoginActivity : AppCompatActivity() {
             }
         binding.btnSalir.setOnClickListener { finishAffinity() }
 
-
-
-
-
     }
 
 

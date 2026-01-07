@@ -1,17 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Bancoalbeca" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
-
-    <style name="Theme.Bancoalbeca" parent="Base.Theme.Bancoalbeca">
-    <item name="android:windowBackground">@drawable/fondo</item>
+    <style name="Theme.Bancoalbeca" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/fondo</item>
     </style>
     <style name="capçalera" parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">20pt</item>
         <item name="android:textStyle">bold</item>
         <item name="android:typeface">monospace</item>
+
+    </style>
+    <style name="MySplash" parent="Theme.Bancoalbeca">
+        <item  name="windowSplashScreenBackground">@color/green</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/mi_ic_launcher</item>
 
     </style>
     <style name="titols" parent="@android:style/TextAppearance.Medium">

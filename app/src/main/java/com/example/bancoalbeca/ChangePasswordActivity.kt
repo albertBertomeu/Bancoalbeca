@@ -11,5 +11,8 @@ class ChangePasswordActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ChangePasswordActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.btnexit.setOnClickListener {
+            finish()
+        }
     }
 }

@@ -26,6 +26,15 @@ class AccountsFragment : Fragment(), AccountsListener {
     private lateinit var linearLayoutManager: LinearLayoutManager
     private lateinit var adaptercuenta: AccountsAdapter
     private lateinit var binding: FragmentAccountsBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let {
+            cliente = it.getSerializable(ARG_CLIENTE) as Cliente
+
+        }
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
@@ -49,13 +58,7 @@ class AccountsFragment : Fragment(), AccountsListener {
         return binding.root
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            cliente = it.getSerializable(ARG_CLIENTE) as Cliente
 
-        }
-    }
 
     fun setCuentaListener(listener: CuentaListener) {
         this.listener = listener
@@ -64,7 +67,7 @@ class AccountsFragment : Fragment(), AccountsListener {
     override fun onClick(cuenta: Cuenta) {
         Toast.makeText(context, "Seleccion: ${cuenta.getNumeroCuenta()}", Toast.LENGTH_LONG).show()
         if (listener != null) {
-            listener.onCorreoSeleccionado(cuenta)
+            listener.onCuentaSeleccionada(cuenta)
         }
     }
 

@@ -10,25 +10,43 @@
     app:cardBackgroundColor="@android:color/white"
     >
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="16dp"
-        >
-        <TextView
-            android:id="@+id/principal"
-            android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="20dp"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:text="prueba"/>
+            android:src="@drawable/ic_banc"
+            android:layout_margin="10dp"
+            android:id="@+id/imgBanc"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
 
-        <TextView
-            android:id="@+id/secundari"
-            android:layout_width="match_parent"
+/>
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="9sp"
-            android:text="prueba"/>
-    </LinearLayout>
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/imgBanc"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="10dp"
+            android:id="@+id/parar"
+            >
+            <TextView
+                android:id="@+id/principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="prueba"/>
+
+            <TextView
+                android:id="@+id/secundari"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:text="prueba"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.cardview.widget.CardView>
