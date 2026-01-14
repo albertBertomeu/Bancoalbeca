@@ -69,6 +69,10 @@ val client = intent.getSerializableExtra("Cliente") as? Cliente
             startActivity(intent)
 
         }
+        binding.cajeros.setOnClickListener {
+            val intent = Intent(this, AtmManagementActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {

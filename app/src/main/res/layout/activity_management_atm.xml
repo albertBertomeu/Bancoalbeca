@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtmManagementActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ATM"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/listaCajeros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ATM LIST"
+        android:background="#6536BF"
+        android:textColor="@color/white"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/anadirCajeros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ATM add"
+        android:background="#6536BF"
+        android:textColor="@color/white"
+android:layout_marginTop="19dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mapaCajeros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ATM MAPS"
+        android:background="#6536BF"
+        android:textColor="@color/white"
+        android:layout_marginTop="19dp"
+
+        />
+
+
+
+</LinearLayout>

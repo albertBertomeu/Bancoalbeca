@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".database.CajeroApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -11,6 +12,16 @@
         android:roundIcon="@mipmap/mi_ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Bancoalbeca">
+        <activity
+            android:name=".AtmFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AtmListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AtmManagementActivity"
+            android:exported="false"
+            android:label="@string/title_activity_atm" />
         <activity
             android:name=".SettingsActivity"
             android:exported="false"

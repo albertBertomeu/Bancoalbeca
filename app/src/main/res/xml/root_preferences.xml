@@ -1,9 +1,8 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory
-        app:title="Idioma"
         app:icon="@drawable/ic_global"
-        >
+        app:title="Idioma">
         <ListPreference
             app:dialogTitle="Indica en que idioma quieres la app"
             app:entries="@array/idioma"
@@ -12,19 +11,18 @@
             app:title="Idioma app"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
-<PreferenceCategory
-    app:title="Datos"
-    app:icon="@drawable/ic_cloud"
-    >
-    <ListPreference
-        app:defaultValue="BDL"
-        app:dialogTitle="Indica el origen de la base de datos"
-        app:entries="@array/origenDatos"
-        app:entryValues="@array/codigo_origen"
-        app:key="origen"
-        app:title="Origen de los datos"
-        app:useSimpleSummaryProvider="true" />
-</PreferenceCategory>
+    <PreferenceCategory
+        app:icon="@drawable/ic_cloud"
+        app:title="Datos">
+        <ListPreference
+            app:defaultValue="BDL"
+            app:dialogTitle="Indica el origen de la base de datos"
+            app:entries="@array/origenDatos"
+            app:entryValues="@array/codigo_origen"
+            app:key="origen"
+            app:title="Origen de los datos"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
 
     <PreferenceCategory app:title="Multimedia">
 
@@ -43,5 +41,6 @@
             app:title="Reproducir video bienvenida" />
 
     </PreferenceCategory>
+
 
 </PreferenceScreen>
